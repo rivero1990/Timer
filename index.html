@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+
+    <div id="countdown">
+
+    </div>
+
+    <div class="timer">
+        <input id="hours" type="number" placeholder="Hours" min="0">
+        <input id="minutes" type="number" placeholder="Minutes" min="0">
+        <input id="seconds" type="number" placeholder="Seconds" min="0">
+    </div>
+
+    
+    <div class="container-buttons">
+
+        <div>
+            <button onclick="startTimer()" id="start-button">Start Timer</button>
+        </div>
+
+        <div>
+            <button onclick="stopTimer()" id="stop-button">Stop Timer</button>
+        </div>
+
+        <div>
+            <button onclick="resetTimer()" id="restart-button">Reset Timer</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
