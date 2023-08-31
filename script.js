@@ -1,4 +1,4 @@
-const startButton = document.querySelector("#start-button");
+const startButtonTimer = document.querySelector("#start-button");
 const countdownTimer = document.querySelector("#countdown");
 const hoursInput = document.querySelector("#hours");
 const minutesInput = document.querySelector("#minutes");
@@ -37,6 +37,9 @@ function startTimer() {
 }
 
 
+/**
+ * Visually update the timer as it runs
+ */
 function updateTimer() {
 
     let hoursTimer = Math.floor(totalSeconds / 3600);
@@ -55,7 +58,7 @@ function updateTimer() {
 
 
 /**
- * Stop the Timer
+ * Stop the Timer and allows it to resume from the point is stopped
  */
 function stopTimer() {
     clearInterval(intervalId);
@@ -65,7 +68,7 @@ function stopTimer() {
 
 
 /**
- * Reset the Timer
+ * Reset the Timer for a new configuration and start
  */
 function resetTimer() {
     totalSeconds = undefined;
